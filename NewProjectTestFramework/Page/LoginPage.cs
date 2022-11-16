@@ -17,10 +17,10 @@ namespace NewProjectTestFramework.Page
         public IWebElement Password => _driver.FindElement(By.Name("Password"));
         public IWebElement Button => _driver.FindElement(By.Name("Login"));
 
-        public void LogginOnPage(string Milos, string Milosss)
+        public void LogginOnPage(string Milos, string Milosss) - string name, string passs  // ovo je metoda za logovanje
         {
-            UserName.SendKeys("Milos");
-            Password.SendKeys("Milosss");
+            UserName.SendKeys("Milos"); // ovde ide name bez navodika
+            Password.SendKeys("Milosss"); // ovde passs  bez navodnika
             Button.Submit();
 
         }
