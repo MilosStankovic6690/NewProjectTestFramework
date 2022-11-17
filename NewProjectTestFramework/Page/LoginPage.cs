@@ -15,13 +15,13 @@ namespace NewProjectTestFramework.Page
 
         public IWebElement UserName => _driver.FindElement(By.Name("UserName"));
         public IWebElement Password => _driver.FindElement(By.Name("Password"));
-        public IWebElement Button => _driver.FindElement(By.Name("Login"));
+        public IWebElement Login => _driver.FindElement(By.Name("Login"));
 
-        public void LogginOnPage(string Milos, string Milosss)
+        public void LogginOnPage(string name, string pass)
         {
-            UserName.SendKeys("Milos");
-            Password.SendKeys("Milosss");
-            Button.Submit();
+            UserName.SendKeys(name);
+            Password.SendKeys(pass);
+            Login.Submit();
 
         }
              
